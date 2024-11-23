@@ -12,6 +12,7 @@ git --version
 ```
 git config --global user.name "username"
 git config --global user.email "mailaddress"
+git config --global init.defaultBranch main
 git config --list
 ```
 
@@ -81,6 +82,7 @@ git restore --staged filename → stageにあげた変更をworktreeに戻す
 git branch → ブランチ一覧確認
  -a：githubのブランチも表示
 git branch branchname → ブランチ作成
+git branch -m master main
 ```
 
 スイッチ
