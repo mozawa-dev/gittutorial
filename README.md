@@ -30,6 +30,16 @@ git remote -v → リモートリポジトリ確認
 git remote set-usl remotename URL → リモートURLの変更
 ```
 
+## ssh 接続設定（wsl）
+
+```
+ssh-keygen -t rsa→秘密鍵、公開鍵生成
+cat ~/.ssh/id_rsa.pub | clip.exe→公開鍵をコピー
+https://github.com/settings/sshで公開鍵をペーストして設定
+ssh -T git@github.com→疎通確認
+git remote set-url origin sshremoteurl→url変更
+```
+
 ## 基本操作
 
 local repo と worktree の差分チェック
